@@ -28,6 +28,7 @@ export class MainNavigationComponent implements OnDestroy {
       })
     );
 
+    // Could be relevant to create a `DrawerService` that allows one to open/close the drawer.
     this._subscriptions.add(
       router.events
         .pipe(filter((event: RouterEvent) => event instanceof NavigationEnd))
